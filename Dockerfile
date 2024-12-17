@@ -6,7 +6,7 @@ ENV TZ Asia/Shanghai
 WORKDIR /code
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
 
 RUN mkdir -p /data/query /data/user
